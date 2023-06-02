@@ -10,14 +10,14 @@ export const Section = styled.section`
   max-width: 100%;
   width: 360px;
 
-  box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
+  background-color: ${props => props.theme.colors.background};
+
   border-radius: 8px;
 `;
 
 export const Title = styled.h2`
   padding: ${props => props.theme.space[4]}px;
 
-  border-bottom: 1px solid #d3d5e3;
   color: ${props => props.theme.colors.accent};
   text-shadow: 1px 1px 1px #fff;
   font-family: ${props => props.theme.fonts.heading};
@@ -32,7 +32,6 @@ export const StatList = styled.ul`
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 8px;
 
   padding: 0;
   margin: 0;
@@ -44,7 +43,6 @@ export const StatListItem = styled.li`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 1 1 auto;
   padding: ${props => props.theme.space[3]}px;
 
   width: 100%;
@@ -52,16 +50,7 @@ export const StatListItem = styled.li`
 
   text-shadow: 0 0 1px #000;
 
-
-  :first-child {
-    border-bottom-left-radius: 0.5rem;
-  }
-
-  :last-child {
-    border-bottom-right-radius: 0.5rem;
-  }
-
-  background-color: ${props => getRandomHexColor(props.index)}
+  background-color: ${props => getRandomHexColor(props.index)};
 `;
 
 export const Label = styled.span`

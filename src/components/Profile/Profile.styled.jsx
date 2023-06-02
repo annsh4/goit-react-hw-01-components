@@ -6,16 +6,15 @@ export const ProfileCard = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-  
+
   margin: 0 auto;
   margin-bottom: ${props => props.theme.space[5]}px;
   padding: ${props => props.theme.space[4]}px;
 
   max-width: 100%;
   width: 360px;
-  
+
   border-radius: ${props => props.theme.radii.medium};
-  box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
   background-color: ${props => props.theme.colors.background};
 `;
 
@@ -38,11 +37,6 @@ export const Avatar = styled.img`
 
   border-radius: 50%;
   box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-
-  &:hover {
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-  }
 `;
 
 export const Info = styled.p`
@@ -76,20 +70,14 @@ export const StatsList = styled.ul`
 `;
 
 export const StatsItem = styled.li`
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 
-  &:hover {
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-  }
-
-  :not(:last-child){
-  border-right: 1px dotted ${props => props.theme.colors.primary};
-
+  :not(:last-child) {
+    border-right: 1px dotted ${props => props.theme.colors.primary};
   }
 `;
 
@@ -104,7 +92,7 @@ export const Label = styled(StatsInfo)`
 `;
 
 export const Quantity = styled(StatsInfo)`
-  color: ${props => props.theme.colors.secondary};
+  color: ${props => props.theme.colors.accent};
   text-shadow: 1px 1px 1px #fff;
   font-weight: ${props => props.theme.fontWeights.bold};
 `;

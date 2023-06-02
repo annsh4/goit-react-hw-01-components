@@ -27,13 +27,6 @@ export const Status = styled.span`
   }};
 `;
 
-// export const Image = styled.img`
-//   display: block;
-//   width: 40px;
-//   height: 40px;
-//   border-radius: 8px;
-// `;
-
 export const Image = styled.img`
   display: flex;
   align-items: center;
@@ -44,16 +37,11 @@ export const Image = styled.img`
 
   border-radius: 50%;
   box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
-
-  &:hover {
-    background: #ecf0f3;
-    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
-  }
 `;
 
 export const Name = styled.p`
   margin-left: 10px;
-  color: #9e0202;
+  color: #253346;
   text-shadow: 1px 1px 1px #fff;
   font-size: 16px;
   font-weight: 700;
